@@ -1,0 +1,1098 @@
+# =========================================================
+# 🐍 PYTHON NOTES: DATA TYPES
+# =========================================================
+
+
+# =========================================================
+# 📌 1. DEFINITION OF DATA TYPES
+# =========================================================
+
+# Data Type:
+# A data type defines the type of value a variable can store.
+
+# Example:
+x = 10        # Integer
+name = "Hi"   # String
+
+print(type(x))
+print(type(name))
+
+# Output:
+# <class 'int'>
+# <class 'str'>
+
+
+# =========================================================
+# 📌 2. TYPES OF DATA TYPES IN PYTHON
+# =========================================================
+
+# Python has the following built-in data types:
+
+# 1. Numeric Types
+# 2. Sequence Types
+# 3. Set Type
+# 4. Mapping Type
+# 5. Boolean Type
+# 6. None Type
+
+
+# =========================================================
+# 📌 3. NUMERIC DATA TYPES
+# =========================================================
+
+# 3.1 Integer (int)
+a = 10
+print(a, type(a))
+
+# Output: 10 <class 'int'>
+
+# 3.2 Float (float)
+b = 5.5
+print(b, type(b))
+
+# Output: 5.5 <class 'float'>
+
+# 3.3 Complex (complex)
+c = 2 + 3j
+print(c, type(c))
+
+# Output: (2+3j) <class 'complex'>
+
+
+# =========================================================
+# 📌 4. SEQUENCE DATA TYPES
+# =========================================================
+
+# Sequence → ordered collection
+
+# 4.1 String (str)
+s = "Python"
+print(s, type(s))
+
+# Output: Python <class 'str'>
+
+# 4.2 List (list) → Mutable
+lst = [1, 2, 3]
+lst[0] = 100   # allowed
+print(lst)
+
+# Output: [100, 2, 3]
+
+# 4.3 Tuple (tuple) → Immutable
+t = (1, 2, 3)
+# t[0] = 10  ❌ Error
+print(t)
+
+# Output: (1, 2, 3)
+
+
+# =========================================================
+# 📌 5. SET DATA TYPE
+# =========================================================
+
+# Set → unordered, unique values
+
+s = {1, 2, 2, 3}
+print(s)
+
+# Output: {1, 2, 3}
+
+
+# =========================================================
+# 📌 6. DICTIONARY (MAPPING TYPE)
+# =========================================================
+
+# Dictionary → key-value pairs
+
+d = {"name": "Shrii", "age": 20}
+print(d)
+
+# Output: {'name': 'Shrii', 'age': 20}
+
+
+# =========================================================
+# 📌 7. BOOLEAN DATA TYPE
+# =========================================================
+
+# Boolean → True or False
+
+x = True
+y = False
+
+print(x, type(x))
+print(y, type(y))
+
+# Output:
+# True <class 'bool'>
+# False <class 'bool'>
+
+
+# =========================================================
+# 📌 8. NONE DATA TYPE
+# =========================================================
+
+# None → represents no value / null
+
+x = None
+print(x, type(x))
+
+# Output:
+# None <class 'NoneType'>
+
+
+# =========================================================
+# 📌 9. TYPE CASTING (IMPORTANT)
+# =========================================================
+
+# Converting one data type into another
+
+a = "10"
+b = int(a)     # string → int
+
+print(b, type(b))
+
+# Output: 10 <class 'int'>
+
+
+# =========================================================
+# 📌 10. MUTABLE vs IMMUTABLE (VERY IMPORTANT)
+# =========================================================
+
+# Mutable → can change
+lst = [1, 2, 3]
+lst[0] = 99
+print(lst)
+
+# Output: [99, 2, 3]
+
+# Immutable → cannot change
+t = (1, 2, 3)
+# t[0] = 99 ❌ Error
+
+
+# =========================================================
+# 📌 11. SUMMARY TABLE (CONCEPT)
+# =========================================================
+
+# int, float, complex → numeric
+# str → text
+# list → ordered, mutable
+# tuple → ordered, immutable
+# set → unordered, unique
+# dict → key-value
+# bool → True/False
+# NoneType → no value
+
+
+# =========================================================
+# 🎯 END OF NOTES
+# =========================================================
+
+
+
+
+# =========================================================
+# 🐍 PYTHON NOTES: OPERATORS
+# =========================================================
+
+
+# =========================================================
+# 📌 1. DEFINITION OF OPERATORS
+# =========================================================
+
+# Operator:
+# An operator is a symbol used to perform operations on variables or values.
+
+# Example:
+a = 10
+b = 5
+
+print(a + b)   # Addition
+
+# Output:
+# 15
+
+
+# =========================================================
+# 📌 2. TYPES OF OPERATORS IN PYTHON
+# =========================================================
+
+# 1. Arithmetic Operators
+# 2. Comparison (Relational) Operators
+# 3. Logical Operators
+# 4. Assignment Operators
+# 5. Bitwise Operators
+# 6. Membership Operators
+# 7. Identity Operators
+
+
+# =========================================================
+# 📌 3. ARITHMETIC OPERATORS
+# =========================================================
+
+a = 10
+b = 3
+
+print("Addition:", a + b)        # 13
+print("Subtraction:", a - b)     # 7
+print("Multiplication:", a * b)  # 30
+print("Division:", a / b)        # 3.333...
+print("Floor Division:", a // b) # 3
+print("Modulus:", a % b)         # 1
+print("Power:", a ** b)          # 1000
+
+
+# =========================================================
+# 📌 4. COMPARISON OPERATORS
+# =========================================================
+
+a = 10
+b = 5
+
+print(a == b)   # False
+print(a != b)   # True
+print(a > b)    # True
+print(a < b)    # False
+print(a >= b)   # True
+print(a <= b)   # False
+
+
+# =========================================================
+# 📌 5. LOGICAL OPERATORS
+# =========================================================
+
+x = True
+y = False
+
+print("AND:", x and y)  # False
+print("OR:", x or y)    # True
+print("NOT:", not x)    # False
+
+
+# =========================================================
+# 📌 6. ASSIGNMENT OPERATORS
+# =========================================================
+
+x = 5
+
+x += 2   # x = x + 2
+print(x) # 7
+
+x -= 1
+print(x) # 6
+
+x *= 2
+print(x) # 12
+
+x /= 3
+print(x) # 4.0
+
+
+# =========================================================
+# 📌 7. BITWISE OPERATORS
+# =========================================================
+
+a = 5   # 101
+b = 3   # 011
+
+print(a & b)   # AND → 1
+print(a | b)   # OR → 7
+print(a ^ b)   # XOR → 6
+print(~a)      # NOT → -6
+print(a << 1)  # Left Shift → 10
+print(a >> 1)  # Right Shift → 2
+
+
+# =========================================================
+# 📌 8. MEMBERSHIP OPERATORS
+# =========================================================
+
+lst = [1, 2, 3]
+
+print(2 in lst)      # True
+print(5 not in lst)  # True
+
+
+# =========================================================
+# 📌 9. IDENTITY OPERATORS
+# =========================================================
+
+a = [1, 2]
+b = [1, 2]
+c = a
+
+print(a is b)   # False (different objects)
+print(a is c)   # True  (same object)
+
+print(a == b)   # True (values same)
+
+
+# =========================================================
+# 📌 10. OPERATOR PRECEDENCE
+# =========================================================
+
+# Order of execution:
+# () → ** → * / // % → + - → comparisons → logical
+
+result = 10 + 2 * 3
+print(result)
+
+# Output:
+# 16
+
+
+# =========================================================
+# 🎯 END OF NOTES
+# =========================================================
+
+
+# =========================================================
+# 🐍 PYTHON NOTES: INPUT FUNCTION
+# =========================================================
+
+
+# =========================================================
+# 📌 1. DEFINITION
+# =========================================================
+
+# input():
+# The input() function is used to take input from the user.
+
+# It always returns data in STRING format.
+
+
+# =========================================================
+# 📌 2. BASIC SYNTAX
+# =========================================================
+
+# variable = input("message")
+
+name = input("Enter your name: ")
+print("Hello", name)
+
+# Example Run:
+# Enter your name: Shrii
+# Output:
+# Hello Shrii
+
+
+# =========================================================
+# 📌 3. IMPORTANT POINT (VERY IMPORTANT)
+# =========================================================
+
+# By default, input() takes STRING only
+
+age = input("Enter age: ")
+print(type(age))
+
+# Example Run:
+# Enter age: 20
+# Output:
+# <class 'str'>
+
+
+# =========================================================
+# 📌 4. TYPE CASTING WITH INPUT
+# =========================================================
+
+# Convert input into required data type
+
+age = int(input("Enter age: "))
+print(age, type(age))
+
+# Example Run:
+# Enter age: 20
+# Output:
+# 20 <class 'int'>
+
+
+# =========================================================
+# 📌 5. TAKING MULTIPLE INPUTS
+# =========================================================
+
+# Method 1: Separate inputs
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("Sum:", a + b)
+
+# Example Run:
+# Enter first number: 5
+# Enter second number: 3
+# Output:
+# Sum: 8
+
+
+# Method 2: Single line input
+
+x, y = map(int, input("Enter two numbers: ").split())
+print("Sum:", x + y)
+
+# Example Run:
+# Enter two numbers: 4 6
+# Output:
+# Sum: 10
+
+
+# =========================================================
+# 📌 6. INPUT FOR DIFFERENT DATA TYPES
+# =========================================================
+
+# Float input
+price = float(input("Enter price: "))
+print(price)
+
+# String input
+city = input("Enter city: ")
+print(city)
+
+# Boolean (manual conversion)
+val = input("Enter True/False: ")
+print(val == "True")
+
+# Example Run:
+# Enter True/False: True
+# Output:
+# True
+
+
+# =========================================================
+# 📌 7. TAKING LIST INPUT
+# =========================================================
+
+# Input: 1 2 3 4
+lst = list(map(int, input("Enter numbers: ").split()))
+print(lst)
+
+# Output:
+# [1, 2, 3, 4]
+
+
+# =========================================================
+# 📌 8. COMMON ERRORS
+# =========================================================
+
+# ❌ Without casting → string concatenation
+a = input("Enter number: ")
+b = input("Enter number: ")
+print(a + b)
+
+# Example Run:
+# 2 + 3 → Output: 23 (wrong for addition)
+
+
+# ✔ Correct way
+a = int(input("Enter number: "))
+b = int(input("Enter number: "))
+print(a + b)
+
+# Output:
+# 5
+
+
+# =========================================================
+# 📌 9. PRACTICE EXAMPLES
+# =========================================================
+
+# Area of rectangle
+l = int(input("Enter length: "))
+w = int(input("Enter width: "))
+print("Area:", l * w)
+
+# Example Run:
+# Enter length: 5
+# Enter width: 4
+# Output:
+# Area: 20
+
+
+# =========================================================
+# 📌 10. SUMMARY
+# =========================================================
+
+# input() → takes user input
+# default type → string
+# use int(), float() → convert type
+# split() + map() → multiple inputs
+
+
+# =========================================================
+# 🎯 END OF NOTES
+# =========================================================
+
+
+
+# =========================================================
+# 🐍 PYTHON NOTES: STRINGS
+# =========================================================
+
+
+# =========================================================
+# 📌 1. DEFINITION
+# =========================================================
+
+# String:
+# A string is a sequence of characters enclosed in quotes.
+
+# Example:
+s = "Hello"
+print(s)
+
+# Output:
+# Hello
+
+
+# =========================================================
+# 📌 2. TYPES OF QUOTES
+# =========================================================
+
+a = 'Python'
+b = "Python"
+c = '''Python'''
+
+print(a, b, c)
+
+# Output:
+# Python Python Python
+
+
+# =========================================================
+# 📌 3. STRING IS IMMUTABLE (IMPORTANT)
+# =========================================================
+
+s = "Hello"
+# s[0] = "Y" ❌ Not allowed
+
+print(s)
+
+# Output:
+# Hello
+
+
+# =========================================================
+# 📌 4. INDEXING
+# =========================================================
+
+s = "Python"
+
+print(s[0])   # P
+print(s[-1])  # n
+
+# Output:
+# P
+# n
+
+
+# =========================================================
+# 📌 5. SLICING
+# =========================================================
+
+s = "Python"
+
+print(s[0:4])   # Pyth
+print(s[:3])    # Pyt
+print(s[3:])    # hon
+
+# Output:
+# Pyth
+# Pyt
+# hon
+
+
+# =========================================================
+# 📌 6. STRING OPERATIONS
+# =========================================================
+
+# Concatenation
+a = "Hello"
+b = "World"
+print(a + " " + b)
+
+# Repetition
+print("Hi " * 3)
+
+# Output:
+# Hello World
+# Hi Hi Hi
+
+
+# =========================================================
+# 📌 7. MEMBERSHIP
+# =========================================================
+
+s = "Python"
+
+print("P" in s)
+print("z" not in s)
+
+# Output:
+# True
+# True
+
+
+# =========================================================
+# 📌 8. STRING METHODS (IMPORTANT)
+# =========================================================
+
+s = "python programming"
+
+print(s.upper())        # PYTHON PROGRAMMING
+print(s.lower())        # python programming
+print(s.title())        # Python Programming
+print(s.capitalize())   # Python programming
+
+# Output shown above
+
+
+# =========================================================
+# 📌 9. SEARCH METHODS
+# =========================================================
+
+s = "hello world"
+
+print(s.find("world"))   # 6
+print(s.index("hello"))  # 0
+
+# Output:
+# 6
+# 0
+
+
+# =========================================================
+# 📌 10. REPLACE & SPLIT
+# =========================================================
+
+s = "I love Python"
+
+print(s.replace("Python", "Coding"))
+print(s.split())
+
+# Output:
+# I love Coding
+# ['I', 'love', 'Python']
+
+
+# =========================================================
+# 📌 11. JOIN
+# =========================================================
+
+lst = ["I", "love", "Python"]
+print(" ".join(lst))
+
+# Output:
+# I love Python
+
+
+# =========================================================
+# 📌 12. STRIP FUNCTIONS
+# =========================================================
+
+s = "  hello  "
+
+print(s.strip())   # remove spaces
+print(s.lstrip())
+print(s.rstrip())
+
+# Output:
+# hello
+# hello
+#   hello
+
+
+# =========================================================
+# 📌 13. CHECK FUNCTIONS
+# =========================================================
+
+s = "Python123"
+
+print(s.isalnum())   # True
+print(s.isalpha())   # False
+print(s.isdigit())   # False
+
+# Output:
+# True
+# False
+# False
+
+
+# =========================================================
+# 📌 14. STRING FORMATTING
+# =========================================================
+
+name = "Shrii"
+age = 20
+
+print(f"My name is {name} and age is {age}")
+
+# Output:
+# My name is Shrii and age is 20
+
+
+# =========================================================
+# 📌 15. ESCAPE CHARACTERS
+# =========================================================
+
+print("Hello\nWorld")
+print("Hello\tWorld")
+
+# Output:
+# Hello
+# World
+# Hello    World
+
+
+# =========================================================
+# 📌 16. LENGTH FUNCTION
+# =========================================================
+
+s = "Python"
+print(len(s))
+
+# Output:
+# 6
+
+
+# =========================================================
+# 📌 17. REVERSING STRING
+# =========================================================
+
+s = "Python"
+print(s[::-1])
+
+# Output:
+# nohtyP
+
+
+# =========================================================
+# 🎯 END OF NOTES
+# =========================================================
+
+
+
+
+
+
+
+
+# =========================================================
+# 🐍 PYTHON NOTES: CONDITIONAL EXPRESSIONS (if-else)
+# =========================================================
+
+
+# =========================================================
+# 📌 1. DEFINITION
+# =========================================================
+
+# Conditional Statements:
+# These are used to make decisions in a program.
+
+# They execute different blocks of code based on conditions.
+
+# Example:
+age = 18
+
+if age >= 18:
+    print("You can vote")
+
+# Output:
+# You can vote
+
+
+# =========================================================
+# 📌 2. TYPES OF CONDITIONAL STATEMENTS
+# =========================================================
+
+# 1. if
+# 2. if-else
+# 3. if-elif-else
+# 4. Nested if
+
+
+# =========================================================
+# 📌 3. IF STATEMENT
+# =========================================================
+
+x = 10
+
+if x > 5:
+    print("x is greater than 5")
+
+# Output:
+# x is greater than 5
+
+
+# =========================================================
+# 📌 4. IF-ELSE STATEMENT
+# =========================================================
+
+x = 3
+
+if x > 5:
+    print("Greater")
+else:
+    print("Smaller")
+
+# Output:
+# Smaller
+
+
+# =========================================================
+# 📌 5. IF-ELIF-ELSE
+# =========================================================
+
+marks = 75
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 70:
+    print("Grade B")
+else:
+    print("Grade C")
+
+# Output:
+# Grade B
+
+
+# =========================================================
+# 📌 6. NESTED IF
+# =========================================================
+
+age = 20
+citizen = True
+
+if age >= 18:
+    if citizen:
+        print("Eligible to vote")
+
+# Output:
+# Eligible to vote
+
+
+# =========================================================
+# 📌 7. CONDITIONAL (TERNARY) EXPRESSION
+# =========================================================
+
+# Short form of if-else
+
+a = 10
+b = 20
+
+result = "a is greater" if a > b else "b is greater"
+print(result)
+
+# Output:
+# b is greater
+
+
+# =========================================================
+# 📌 8. MULTIPLE CONDITIONS (LOGICAL OPERATORS)
+# =========================================================
+
+age = 25
+
+if age > 18 and age < 60:
+    print("Working age")
+
+# Output:
+# Working age
+
+
+# =========================================================
+# 📌 9. INPUT WITH CONDITIONS
+# =========================================================
+
+num = int(input("Enter number: "))
+
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+# Example Run:
+# Enter number: 4
+# Output:
+# Even
+
+
+# =========================================================
+# 📌 10. IMPORTANT POINTS
+# =========================================================
+
+# ✔ Indentation is important
+# ✔ Condition must be True/False
+# ✔ Use comparison operators (>, <, ==)
+# ✔ Use logical operators (and, or, not)
+
+
+# =========================================================
+# 📌 11. COMMON ERRORS
+# =========================================================
+
+# ❌ Missing colon
+# if x > 5
+#     print("Error")
+
+# ❌ Wrong indentation
+
+
+# =========================================================
+# 📌 12. REAL-LIFE EXAMPLES
+# =========================================================
+
+# Login System
+password = "1234"
+
+if password == "1234":
+    print("Login Successful")
+else:
+    print("Wrong Password")
+
+# Output:
+# Login Successful
+
+
+# =========================================================
+# 🎯 END OF NOTES
+# =========================================================
+
+
+
+
+
+# =========================================================
+# 🐍 PYTHON NOTES: INDENTATION
+# =========================================================
+
+
+# =========================================================
+# 📌 1. DEFINITION
+# =========================================================
+
+# Indentation:
+# Indentation means giving spaces at the beginning of a line of code.
+
+# In Python, indentation is used to define blocks of code.
+
+
+# =========================================================
+# 📌 2. WHY INDENTATION IS IMPORTANT
+# =========================================================
+
+# Python does NOT use {} like other languages.
+# It uses indentation to understand which code belongs to which block.
+
+
+# =========================================================
+# 📌 3. BASIC EXAMPLE
+# =========================================================
+
+x = 10
+
+if x > 5:
+    print("Greater")   # Indented → inside if block
+
+print("Done")          # Not indented → outside block
+
+# Output:
+# Greater
+# Done
+
+
+# =========================================================
+# 📌 4. WRONG INDENTATION (ERROR)
+# =========================================================
+
+# if x > 5:
+# print("Error")   ❌ IndentationError
+
+# Python expects indentation after if
+
+
+# =========================================================
+# 📌 5. INDENTATION IN IF-ELSE
+# =========================================================
+
+x = 3
+
+if x > 5:
+    print("Big")
+else:
+    print("Small")
+
+# Output:
+# Small
+
+
+# =========================================================
+# 📌 6. INDENTATION IN LOOPS
+# =========================================================
+
+for i in range(3):
+    print(i)
+
+print("Loop End")
+
+# Output:
+# 0
+# 1
+# 2
+# Loop End
+
+
+# =========================================================
+# 📌 7. NESTED INDENTATION
+# =========================================================
+
+x = 10
+
+if x > 5:
+    print("Level 1")
+
+    if x > 8:
+        print("Level 2")
+
+# Output:
+# Level 1
+# Level 2
+
+
+# =========================================================
+# 📌 8. STANDARD RULE (VERY IMPORTANT)
+# =========================================================
+
+# Use 4 spaces for indentation (recommended)
+
+if True:
+    print("Correct Indentation")
+
+
+# =========================================================
+# 📌 9. COMMON MISTAKES
+# =========================================================
+
+# ❌ Mixing tabs and spaces
+# ❌ Missing indentation
+# ❌ Extra indentation
+
+
+# =========================================================
+# 📌 10. REAL-LIFE LOGIC
+# =========================================================
+
+marks = 80
+
+if marks >= 50:
+    print("Pass")
+    print("Good Job")   # same block
+
+print("End")
+
+# Output:
+# Pass
+# Good Job
+# End
+
+
+# =========================================================
+# 🎯 END OF NOTES
+# =========================================================
