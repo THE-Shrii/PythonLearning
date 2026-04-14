@@ -256,3 +256,45 @@ nt = (1, (2, 3), 4)
 
 # 30. Access nested element
 # print(nt[1][1])  # 3
+
+
+
+
+
+
+
+
+
+# List to store all students (each student is a tuple)
+students = []
+
+# Adding students (name, roll_no, marks)
+students.append(("Amit", 101, 85))
+students.append(("Rahul", 102, 92))
+students.append(("Sneha", 103, 78))
+students.append(("Priya", 104, 88))
+
+# Print all students
+print("===== STUDENT LIST =====")
+
+for student in students:
+    name = student[0]
+    roll = student[1]
+    marks = student[2]
+
+    print("Name:", name)
+    print("Roll No:", roll)
+    print("Marks:", marks)
+    print("-------------------")
+
+# Find topper
+topper = students[0]
+
+for student in students:
+    if student[2] > topper[2]:
+        topper = student
+
+print("\n===== TOPPER =====")
+print("Name:", topper[0])
+print("Roll No:", topper[1])
+print("Marks:", topper[2])
