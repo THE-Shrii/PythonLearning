@@ -151,3 +151,108 @@ copy2 = nums[:]
 
 # 50. Final print
 # print(nums)
+
+
+
+
+
+
+
+
+
+
+# 1. Create a tuple
+t = (1, 2, 3)
+
+# 2. Print tuple
+# print(t)  # (1, 2, 3)
+
+# 3. Print first element
+# print(t[0])  # 1
+
+# 4. Print last element
+# print(t[-1])  # 3
+
+# 5. Find length
+# print(len(t))  # 3
+
+# 6. Check type
+# print(type(t))  # <class 'tuple'>
+
+# 7. Tuple with strings
+colors = ("red", "green", "blue")
+
+# 8. Access element
+# print(colors[1])  # green
+
+# 9. Loop tuple
+# for i in colors:
+#     print(i)
+
+# 10. Loop with index
+# for i in range(len(colors)):
+#     print(colors[i])
+
+# 11. Tuple unpacking
+a, b, c = colors
+
+# 12. Print unpacked values
+# print(a, b, c)
+
+# 13. Single element tuple
+t1 = (10,)
+
+# 14. Check type
+# print(type(t1))  # tuple
+
+# 15. Tuple without comma (not tuple)
+t2 = (10)
+# print(type(t2))  # int
+
+# 16. Count occurrences
+t = (1, 2, 2, 3)
+# print(t.count(2))  # 2
+
+# 17. Find index
+# print(t.index(3))  # 3
+
+# 18. Join tuples
+t3 = (1, 2)
+t4 = (3, 4)
+t5 = t3 + t4
+
+# 19. Print joined tuple
+# print(t5)  # (1,2,3,4)
+
+# 20. Multiply tuple
+# print(t3 * 2)  # (1,2,1,2)
+
+# 21. Check value in tuple
+# print(2 in t3)  # True
+
+# 22. Check not in
+# print(5 not in t3)  # True
+
+# 23. Slice tuple
+# print(t5[1:3])
+
+# 24. Reverse tuple
+# print(t5[::-1])
+
+# 25. Convert tuple to list
+lst = list(t3)
+
+# 26. Modify list (since tuple is immutable)
+lst[0] = 99
+
+# 27. Convert back to tuple
+t3 = tuple(lst)
+
+# 28. Print updated tuple
+# print(t3)
+
+# 29. Nested tuple
+nt = (1, (2, 3), 4)
+
+# 30. Access nested element
+# print(nt[1][1])  # 3
