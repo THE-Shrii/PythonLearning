@@ -1,0 +1,153 @@
+# 1. Create a list of 5 numbers
+nums = [1, 2, 3, 4, 5]  # correct
+
+# 2. Print first element
+# print(nums[0])  # 1
+
+# 3. Print last element
+# print(nums[-1])  # 5
+
+# 4. Change second element to 10
+nums[1] = 10  # [1, 10, 3, 4, 5]
+
+# 5. Add 100 to list
+nums.append(100)  # [1, 10, 3, 4, 5, 100]
+
+# 6. Remove 3 from list
+nums.remove(3)  # [1, 10, 4, 5, 100]
+
+# 7. Length of list
+# print(len(nums))  # 5
+
+# 8. Check if 10 exists
+# print(10 in nums)  # True
+
+# 9. Find sum of list
+# print(sum(nums))  # 120
+
+# 10. Find max value
+# print(max(nums))  # 100
+
+# 11. Find min value
+# print(min(nums))  # 1
+
+# 12. Sort list ascending
+nums.sort()  # sorted order
+
+# 13. Sort descending
+nums.sort(reverse=True)
+
+# 14. Reverse list
+nums.reverse()
+
+# 15. Copy list
+copy_nums = nums.copy()
+
+# 16. Clear list
+temp = [1,2,3]
+temp.clear()  # []
+
+# 17. Insert element at index
+nums.insert(1, 999)
+
+# 18. Count occurrences
+# print(nums.count(10))
+
+# 19. Get index of element
+# print(nums.index(10))
+
+# 20. Extend list
+nums.extend([7, 8, 9])
+
+# 21. Slice list first 3 elements
+# print(nums[:3])
+
+# 22. Slice last 3 elements
+# print(nums[-3:])
+
+# 23. Step slicing
+# print(nums[::2])
+
+# 24. Reverse slicing
+# print(nums[::-1])
+
+# 25. Create empty list
+empty = []
+
+# 26. List of strings
+colors = ["red", "green", "blue"]
+
+# 27. Change string in list
+colors[1] = "yellow"
+
+# 28. Append new color
+colors.append("purple")
+
+# 29. Remove element
+colors.remove("red")
+
+# 30. Print list
+# print(colors)
+
+# 31. List with mixed data types
+mix = [1, "hello", 3.5, True]
+
+# 32. Nested list
+nested = [1, [2, 3], 4]
+
+# 33. Access nested element
+# print(nested[1][0])  # 2
+
+# 34. Multiply list
+# print([1,2] * 3)  # [1,2,1,2,1,2]
+
+# 35. Check empty list
+# print(len([]) == 0)
+
+# 36. Replace multiple values
+nums[0:2] = [50, 60]
+
+# 37. Delete element by index
+del nums[0]
+
+# 38. Delete slice
+del nums[0:2]
+
+# 39. Loop list
+# for i in nums:
+#     print(i)
+
+# 40. Loop with index
+# for i in range(len(nums)):
+#     print(nums[i])
+
+# 41. List comprehension basic
+sq = [x*x for x in range(5)]
+
+# 42. Even numbers
+evens = [x for x in range(10) if x % 2 == 0]
+
+# 43. Odd numbers
+odds = [x for x in range(10) if x % 2 != 0]
+
+# 44. Double values
+double = [x*2 for x in nums]
+
+# 45. Filter greater than 5
+greater = [x for x in nums if x > 5]
+
+# 46. Convert list to string
+words = ["Hi", "Python"]
+# print(" ".join(words))
+
+# 47. Convert string to list
+# print(list("hello"))
+
+# 48. Swap two elements
+nums[0], nums[1] = nums[1], nums[0]
+
+# 49. Copy using slicing
+copy2 = nums[:]
+
+# 50. Final print
+# print(nums)
