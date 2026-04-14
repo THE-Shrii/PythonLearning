@@ -298,3 +298,24 @@ print("\n===== TOPPER =====")
 print("Name:", topper[0])
 print("Roll No:", topper[1])
 print("Marks:", topper[2])
+
+
+
+
+
+
+
+
+
+import random
+
+number = random.randint(1, 10)
+
+guess = int(input("Guess a number between 1 to 10: "))
+
+if guess == number:
+    print("Correct! 🎉")
+elif guess > number:
+    print("Too high 📈, correct number was", number)
+else:
+    print("Too low 📉, correct number was", number)
