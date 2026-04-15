@@ -274,6 +274,15 @@ students.append(("Rahul", 102, 92))
 students.append(("Sneha", 103, 78))
 students.append(("Priya", 104, 88))
 
+
+
+
+
+
+
+
+
+
 # Print all students
 print("===== STUDENT LIST =====")
 
@@ -286,6 +295,18 @@ for student in students:
     print("Roll No:", roll)
     print("Marks:", marks)
     print("-------------------")
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Find topper
 topper = students[0]
@@ -323,6 +344,11 @@ else:
 
 
 
+
+
+
+
+
 name = input("Enter name: ")
 attendance = input("Are you present? (yes/no): ")
 
@@ -349,11 +375,33 @@ else:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 student = ("Amit", 101, 85)
 
 print("Name:", student[0])
 print("Roll:", student[1])
 print("Marks:", student[2])
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -367,6 +415,16 @@ print("Student List:", students)
 
 print("First Student:", students[0])
 print("Last Student:", students[-1])
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -392,12 +450,38 @@ else:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 num = int(input("Enter number: "))
 
 if num % 2 == 0:
     print("Even Number")
 else:
     print("Odd Number")
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -423,6 +507,24 @@ if username == "admin" and password == "1234":
     print("Login Successful ✅")
 else:
     print("Invalid Login ❌")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
