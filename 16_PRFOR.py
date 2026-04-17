@@ -257,3 +257,202 @@ for i in range(1, 6):
     total += i*i
 print(total)
 # Output: 55
+
+
+
+# ================= ADVANCED (31–40) =================
+
+# Q31. Print numbers divisible by 3 and 5 (1–50)
+for i in range(1, 51):
+    if i % 3 == 0 and i % 5 == 0:
+        print(i)
+# Explanation:
+# number must satisfy both conditions → divisible by 15
+# Output: 15 30 45
+
+
+# Q32. Count digits divisible by 2 in a number
+num = 246135
+count = 0
+for d in str(num):
+    if int(d) % 2 == 0:
+        count += 1
+print(count)
+# Explanation:
+# convert number to string → loop through digits
+# Output: 3
+
+
+# Q33. Reverse string using for loop
+s = "hello"
+rev = ""
+for ch in s:
+    rev = ch + rev
+print(rev)
+# Output: olleh
+
+
+# Q34. Sum of odd digits
+num = 12345
+total = 0
+for d in str(num):
+    if int(d) % 2 != 0:
+        total += int(d)
+print(total)
+# Output: 9
+
+
+# Q35. Check if number contains digit 5
+num = 12345
+found = False
+for d in str(num):
+    if d == "5":
+        found = True
+        break
+print(found)
+# Output: True
+
+
+# Q36. Reverse pattern
+for i in range(5, 0, -1):
+    print("*" * i)
+# Output:
+# *****
+# ****
+# ***
+# **
+# *
+
+
+# Q37. Count zeros in number
+num = 10020
+count = 0
+for d in str(num):
+    if d == "0":
+        count += 1
+print(count)
+# Output: 3
+
+
+# Q38. Product of digits
+num = 123
+prod = 1
+for d in str(num):
+    prod *= int(d)
+print(prod)
+# Output: 6
+
+
+# Q39. Find smallest digit
+num = 7392
+small = 9
+for d in str(num):
+    if int(d) < small:
+        small = int(d)
+print(small)
+# Output: 2
+
+
+# Q40. Count numbers greater than 10 in list
+lst = [5, 12, 7, 20]
+count = 0
+for i in lst:
+    if i > 10:
+        count += 1
+print(count)
+# Output: 2
+
+
+# ================= LOGIC + PATTERN (41–50) =================
+
+# Q41. Print elements until 0 appears
+lst = [1,2,3,0,5]
+for i in lst:
+    if i == 0:
+        break
+    print(i)
+# Output: 1 2 3
+
+
+# Q42. Count vowels in string
+s = "education"
+count = 0
+for ch in s:
+    if ch in "aeiou":
+        count += 1
+print(count)
+# Output: 5
+
+
+# Q43. Print ASCII values
+for ch in "ABC":
+    print(ord(ch))
+# Output: 65 66 67
+
+
+# Q44. Print only odd digits
+num = 123456
+for d in str(num):
+    if int(d) % 2 != 0:
+        print(d)
+# Output: 1 3 5
+
+
+# Q45. Count consecutive duplicates
+lst = [1,1,2,3,3]
+count = 0
+for i in range(len(lst)-1):
+    if lst[i] == lst[i+1]:
+        count += 1
+print(count)
+# Output: 2
+
+
+# Q46. Check uppercase in string
+s = "Hello"
+found = False
+for ch in s:
+    if ch.isupper():
+        found = True
+        break
+print(found)
+# Output: True
+
+
+# Q47. Sum of list elements
+lst = [1,2,3,4]
+total = 0
+for i in lst:
+    total += i
+print(total)
+# Output: 10
+
+
+# Q48. Find max in list
+lst = [5,8,2,9]
+max_val = lst[0]
+for i in lst:
+    if i > max_val:
+        max_val = i
+print(max_val)
+# Output: 9
+
+
+# Q49. Count words
+s = "hello world python"
+count = 1
+for ch in s:
+    if ch == " ":
+        count += 1
+print(count)
+# Output: 3
+
+
+# Q50. Final challenge: sum of cubes
+total = 0
+for i in range(1, 6):
+    total += i**3
+print(total)
+# Explanation:
+# 1³ + 2³ + 3³ + 4³ + 5³
+# Output: 225
