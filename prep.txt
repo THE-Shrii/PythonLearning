@@ -2104,3 +2104,246 @@ for k,v in d.items():
 keys = ["a","b"]
 vals = [1,2]
 print(dict(zip(keys,vals)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+IF-ELSE IN PYTHON (CONTROL FLOW)
+📌 What is if-else?
+
+if-else is used for decision making in Python.
+
+👉 It executes code based on conditions (True / False)
+
+🧾 Basic Syntax:
+if condition:
+    # code
+else:
+    # code
+🔥 Example:
+age = 18
+
+if age >= 18:
+    print("Eligible")
+else:
+    print("Not Eligible")
+⚡ 1. IF STATEMENT
+x = 10
+
+if x > 5:
+    print("Greater")
+⚡ 2. IF-ELSE
+x = 3
+
+if x > 5:
+    print("Greater")
+else:
+    print("Smaller")
+⚡ 3. IF-ELIF-ELSE
+
+Used when multiple conditions exist.
+
+marks = 75
+
+if marks >= 90:
+    print("A")
+elif marks >= 60:
+    print("B")
+else:
+    print("Fail")
+⚡ 4. NESTED IF
+age = 20
+
+if age >= 18:
+    if age >= 21:
+        print("Adult")
+⚡ 5. SHORT HAND IF
+x = 10
+if x > 5: print("Yes")
+⚡ 6. TERNARY (ONE-LINE IF-ELSE)
+x = 10
+print("Even") if x % 2 == 0 else print("Odd")
+🧠 IMPORTANT POINTS
+
+✔ Indentation is mandatory
+✔ Conditions return True/False
+✔ Can use logical operators (and, or, not)
+
+❗ INTERVIEW QUESTIONS
+Q1. What is if-else?
+
+👉 Used for decision making based on conditions.
+
+Q2. Difference between if and elif?
+
+👉 if → first condition
+👉 elif → multiple conditions
+
+Q3. What is ternary operator?
+
+👉 One-line if-else
+
+🎯 QUICK REVISION
+Type	Use
+if	single condition
+if-else	two conditions
+elif	multiple conditions
+nested	condition inside condition
+🚀 30 IF-ELSE CODING QUESTIONS (WITH ANSWERS)
+🔰 BASIC (1–10)
+# 1 Check positive
+x = 5
+if x > 0:
+    print("Positive")
+# 2 Check even/odd
+x = 4
+if x % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+# 3 Check greater
+a, b = 10, 5
+if a > b:
+    print("a is greater")
+# 4 Check number
+x = -2
+if x >= 0:
+    print("Non-negative")
+else:
+    print("Negative")
+# 5 Voting eligibility
+age = 18
+if age >= 18:
+    print("Eligible")
+else:
+    print("Not Eligible")
+# 6 Check divisible by 5
+x = 10
+if x % 5 == 0:
+    print("Divisible")
+# 7 Largest of two
+a, b = 3, 7
+print(a if a > b else b)
+# 8 Check zero
+x = 0
+if x == 0:
+    print("Zero")
+# 9 Pass/Fail
+marks = 40
+if marks >= 33:
+    print("Pass")
+else:
+    print("Fail")
+# 10 Character check
+ch = 'a'
+if ch.isalpha():
+    print("Alphabet")
+⚙️ INTERMEDIATE (11–20)
+# 11 Largest of three
+a,b,c = 1,5,3
+print(max(a,b,c))
+# 12 Grade system
+marks = 85
+if marks >= 90:
+    print("A")
+elif marks >= 75:
+    print("B")
+else:
+    print("C")
+# 13 Leap year
+year = 2024
+if year % 4 == 0:
+    print("Leap Year")
+# 14 Check vowel
+ch = 'a'
+if ch in 'aeiou':
+    print("Vowel")
+# 15 Check number range
+x = 7
+if 1 <= x <= 10:
+    print("In range")
+# 16 Divisible by 3 and 5
+x = 15
+if x % 3 == 0 and x % 5 == 0:
+    print("Yes")
+# 17 Temperature check
+temp = 30
+if temp > 25:
+    print("Hot")
+else:
+    print("Cool")
+# 18 Password check
+pwd = "1234"
+if pwd == "1234":
+    print("Login success")
+# 19 Check uppercase
+ch = 'A'
+if ch.isupper():
+    print("Uppercase")
+# 20 Check digit
+ch = '5'
+if ch.isdigit():
+    print("Digit")
+🚀 ADVANCED (21–30)
+# 21 Nested if
+age = 20
+if age >= 18:
+    if age >= 21:
+        print("Adult")
+# 22 Triangle validity
+a,b,c = 3,4,5
+if a+b>c and a+c>b and b+c>a:
+    print("Valid")
+# 23 Profit/Loss
+cp, sp = 100, 120
+if sp > cp:
+    print("Profit")
+else:
+    print("Loss")
+# 24 Electricity bill
+units = 120
+if units < 100:
+    print(units*5)
+else:
+    print(units*10)
+# 25 ATM check
+balance = 5000
+withdraw = 2000
+if withdraw <= balance:
+    print("Success")
+# 26 Even and >10
+x = 12
+if x%2==0 and x>10:
+    print("Valid")
+# 27 Login system
+user = "admin"
+if user == "admin":
+    print("Welcome")
+# 28 Discount system
+price = 1000
+if price > 500:
+    print(price*0.9)
+# 29 Check palindrome number
+x = 121
+if str(x) == str(x)[::-1]:
+    print("Palindrome")
+# 30 Multiple conditions
+x = 5
+if x > 0:
+    print("Positive")
+elif x < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+
+
