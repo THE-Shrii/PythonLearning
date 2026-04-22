@@ -1,0 +1,65 @@
+intro interview question for python
+👇
+
+🐍 Basic Python Introduction Interview Questions
+1. What is Python?
+
+Python is a high-level, interpreted, object-oriented programming language known for its simplicity and readability. It is widely used in web development, data science, AI, automation, and more.
+
+2. Why is Python so popular?
+
+Python is popular because:
+
+Easy to learn and write
+Simple syntax (like English)
+Huge libraries (NumPy, Pandas, etc.)
+Cross-platform support
+Used in AI, ML, Web Dev, Data Science
+3. Is Python compiled or interpreted?
+
+Python is an interpreted language, meaning code is executed line by line, which makes debugging easier.
+
+4. What are variables in Python?
+
+Variables are containers used to store data values.
+Example:
+
+x = 10
+name = "Shrii"
+5. What are the data types in Python?
+
+Common data types:
+
+int → 10
+float → 10.5
+str → "Hello"
+list → [1,2,3]
+tuple → (1,2,3)
+dict → {"a":1}
+6. Difference between list and tuple?
+List → mutable (can change)
+Tuple → immutable (cannot change)
+7. What are keywords in Python?
+
+Keywords are reserved words that have special meaning in Python like:
+if, else, while, for, def, class
+
+8. What is indentation in Python?
+
+Indentation means spaces at the beginning of a line. Python uses it to define code blocks instead of curly braces.
+
+9. What is a function in Python?
+
+A function is a block of reusable code.
+
+def greet():
+    print("Hello")
+10. What is a module in Python?
+
+A module is a file containing Python code (functions, variables, classes) that can be imported.
+
+💡 Bonus Tip (Interview Trick)
+
+If interviewer asks “introduce yourself in Python context”, you can say:
+
+“I have basic knowledge of Python including variables, loops, functions, and I’m currently improving my problem-solving skills using Python.”
