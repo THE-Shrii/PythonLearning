@@ -403,3 +403,133 @@ Casting	Type conversion	int("10")
 ✔ Answer:
 
 It is used to convert data into required type for operations like math, input handling, and calculations.
+
+
+
+
+
+
+////STRINGS WITH ALL METHODS AND EVERYTHING
+
+🐍 STRINGS IN PYTHON (FULL GUIDE)
+📌 What is a String?
+
+A string is a sequence of characters enclosed in:
+
+Single quotes ' '
+Double quotes " "
+name = "Shrii"
+city = 'Raipur'
+
+✔ Strings are immutable (cannot be changed after creation)
+
+🔥 1. STRING INDEXING
+
+Each character has an index (starts from 0)
+
+text = "Python"
+# P  y  t  h  o  n
+# 0  1  2  3  4  5
+Access characters:
+print(text[0])   # P
+print(text[3])   # h
+🔥 2. STRING SLICING
+text = "Python"
+print(text[0:3])   # Pyt
+print(text[2:])    # thon
+print(text[:4])    # Pyth
+🧠 3. IMPORTANT STRING METHODS
+🟢 Case Methods
+🔹 upper()
+text = "hello"
+print(text.upper())   # HELLO
+🔹 lower()
+print("HELLO".lower())   # hello
+🔹 title()
+print("hello world".title())  # Hello World
+🔹 capitalize()
+print("python".capitalize())  # Python
+🟡 Check Methods
+🔹 isalpha()
+print("abc".isalpha())  # True
+🔹 isnumeric()
+print("123".isnumeric())  # True
+🔹 isalnum()
+print("abc123".isalnum())  # True
+🔵 Search Methods
+🔹 find()
+text = "hello world"
+print(text.find("world"))  # 6
+🔹 index()
+print(text.index("hello"))  # 0
+🔴 Replace Method
+🔹 replace()
+text = "I like Java"
+print(text.replace("Java", "Python"))
+🟣 Split & Join
+🔹 split()
+text = "applebananagrape"
+print(text.split(","))
+
+✔ Output: ['apple', 'banana', 'grape']
+
+🔹 join()
+words = ["I", "love", "Python"]
+print(" ".join(words))
+
+✔ Output: I love Python
+
+🟤 Trim Methods
+🔹 strip()
+text = "  hello  "
+print(text.strip())
+
+✔ Removes spaces from both sides
+
+🔹 lstrip() / rstrip()
+print("  hello".lstrip())
+print("hello  ".rstrip())
+⚡ 4. STRING FORMATTING
+🔹 f-string (MOST IMPORTANT)
+name = "Shrii"
+age = 20
+print(f"My name is {name} and age is {age}")
+🔹 format()
+print("My name is {} and age is {}".format(name, age))
+🔥 5. STRING PROPERTIES
+
+✔ Ordered
+✔ Immutable
+✔ Iterable
+✔ Indexable
+
+❗ IMPORTANT INTERVIEW QUESTIONS
+Q1. What is string in Python?
+
+👉 A sequence of characters enclosed in quotes.
+
+Q2. Is string mutable or immutable?
+
+👉 Immutable (cannot be changed after creation)
+
+Q3. Difference between find() and index()?
+
+👉 find() returns -1 if not found, index() gives error.
+
+Q4. What is split() used for?
+
+👉 To convert string into list.
+
+Q5. What is join() used for?
+
+👉 To combine list into string.
+
+🎯 QUICK REVISION TABLE
+Method	Use
+upper()	uppercase
+lower()	lowercase
+find()	search
+replace()	replace text
+split()	string → list
+join()	list → string
+strip()	remove spaces
