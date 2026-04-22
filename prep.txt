@@ -1218,3 +1218,629 @@ print(list(s))
 lst = ["I", "love", "Python"]
 print(lst[::-1])
 
+
+
+
+
+🐍 TUPLES IN PYTHON
+📌 What is a Tuple?
+
+A tuple is an ordered collection of elements, similar to a list, but:
+
+👉 Immutable (cannot be changed after creation)
+
+🧾 Syntax:
+my_tuple = (1, 2, 3, "hello")
+🔥 1. FEATURES OF TUPLES
+
+✔ Ordered
+✔ Immutable ❗
+✔ Allows duplicates
+✔ Can store multiple data types
+
+📌 2. TUPLE INDEXING
+t = (10, 20, 30)
+
+print(t[0])   # 10
+print(t[2])   # 30
+📌 3. TUPLE SLICING
+t = (1, 2, 3, 4, 5)
+
+print(t[1:4])   # (2, 3, 4)
+⚡ 4. IMMUTABILITY (IMPORTANT)
+t = (1, 2, 3)
+# t[0] = 10 ❌ Error
+
+👉 You cannot modify, add, or remove elements
+
+🔥 5. TUPLE METHODS (LIMITED)
+
+Tuples have only 2 built-in methods:
+
+🟢 count()
+
+Counts occurrences
+
+t = (1, 2, 2, 3)
+print(t.count(2))
+🟢 index()
+
+Finds position
+
+t = (10, 20, 30)
+print(t.index(20))
+🔄 6. LOOPING THROUGH TUPLES
+t = (1, 2, 3)
+
+for i in t:
+    print(i)
+🔥 7. TUPLE PACKING & UNPACKING
+📦 Packing
+t = 1, 2, 3
+print(t)
+🎯 Unpacking
+a, b, c = (10, 20, 30)
+print(a, b, c)
+⚡ 8. SINGLE ELEMENT TUPLE
+t = (5,)   # comma is important
+
+❗ Without comma → not a tuple
+
+🔥 9. TUPLE OPERATIONS
+➕ Concatenation
+t1 = (1, 2)
+t2 = (3, 4)
+
+print(t1 + t2)
+✖ Repetition
+print((1, 2) * 3)
+🧠 10. CONVERT TUPLE
+t = (1, 2, 3)
+lst = list(t)   # tuple → list
+❗ IMPORTANT INTERVIEW QUESTIONS
+Q1. What is tuple?
+
+👉 Ordered, immutable collection of elements.
+
+Q2. Difference between list and tuple?
+
+👉 List = mutable, Tuple = immutable
+
+Q3. Why tuple is faster than list?
+
+👉 Because it is immutable → less memory & faster execution.
+
+Q4. Can tuple store different data types?
+
+👉 Yes
+
+Q5. How to create single element tuple?
+
+👉 Using comma (5,)
+
+🎯 QUICK REVISION TABLE
+Concept	Tuple
+Mutable	❌ No
+Ordered	✅ Yes
+Methods	count(), index()
+Syntax	( )
+🚀 REAL WORLD USES
+
+✔ Storing fixed data (coordinates, RGB values)
+✔ Returning multiple values from function
+✔ Database records (read-only)
+✔ Faster data handling
+
+🔥 BONUS INTERVIEW TRICK
+
+👉 If interviewer asks:
+“When should we use tuple over list?”
+
+✔ Answer:
+
+When data should not change and we need faster performance.
+
+⚠️ QUICK CORRECTION (from your previous code 👇)
+
+You wrote:
+
+# Second smallest
+lst = [100, 20, 30]
+lst.sort()
+print(lst[-2])
+
+👉 This gives second largest, not second smallest ❗
+
+✔ Correct version:
+
+print(lst[1])   # second smallest
+
+
+
+
+
+
+
+
+
+
+
+
+🐍 50 TUPLE CODING QUESTIONS (WITH ANSWERS)
+🔰 BASIC (1–15)
+1
+# Create a tuple
+t = (1, 2, 3)
+print(t)
+2
+# Access first element
+t = (10, 20, 30)
+print(t[0])
+3
+# Length of tuple
+t = (1, 2, 3)
+print(len(t))
+4
+# Check element exists
+t = (1, 2, 3)
+print(2 in t)
+5
+# Count element
+t = (1, 2, 2, 3)
+print(t.count(2))
+6
+# Find index
+t = (10, 20, 30)
+print(t.index(20))
+7
+# Loop through tuple
+t = (1, 2, 3)
+for i in t:
+    print(i)
+8
+# Slice tuple
+t = (1, 2, 3, 4)
+print(t[1:3])
+9
+# Concatenate tuples
+t1 = (1, 2)
+t2 = (3, 4)
+print(t1 + t2)
+10
+# Repeat tuple
+t = (1, 2)
+print(t * 3)
+11
+# Single element tuple
+t = (5,)
+print(type(t))
+12
+# Convert tuple to list
+t = (1, 2, 3)
+print(list(t))
+13
+# Convert list to tuple
+lst = [1, 2, 3]
+print(tuple(lst))
+14
+# Find max
+t = (1, 5, 3)
+print(max(t))
+15
+# Find min
+t = (1, 5, 3)
+print(min(t))
+⚙️ INTERMEDIATE (16–35)
+16
+# Sum of tuple
+t = (1, 2, 3)
+print(sum(t))
+17
+# Multiply elements
+t = (1, 2, 3)
+res = 1
+for i in t:
+    res *= i
+print(res)
+18
+# Even numbers
+t = (1, 2, 3, 4)
+print([x for x in t if x % 2 == 0])
+19
+# Odd numbers
+t = (1, 2, 3, 4)
+print([x for x in t if x % 2 != 0])
+20
+# Square elements
+t = (1, 2, 3)
+print([x*x for x in t])
+21
+# Unpacking
+t = (10, 20, 30)
+a, b, c = t
+print(a, b, c)
+22
+# Nested tuple access
+t = ((1,2),(3,4))
+print(t[1][0])
+23
+# Reverse tuple
+t = (1, 2, 3)
+print(t[::-1])
+24
+# Check empty tuple
+t = ()
+print(len(t) == 0)
+25
+# Join tuples
+t1 = (1,2)
+t2 = (3,4)
+t3 = t1 + t2
+print(t3)
+26
+# Find largest manually
+t = (1,5,3)
+m = t[0]
+for i in t:
+    if i > m:
+        m = i
+print(m)
+27
+# Find smallest manually
+t = (1,5,3)
+m = t[0]
+for i in t:
+    if i < m:
+        m = i
+print(m)
+28
+# Count even numbers
+t = (1,2,3,4)
+c = 0
+for i in t:
+    if i % 2 == 0:
+        c += 1
+print(c)
+29
+# Count odd numbers
+t = (1,2,3,4)
+c = 0
+for i in t:
+    if i % 2 != 0:
+        c += 1
+print(c)
+30
+# Convert string to tuple
+s = "python"
+print(tuple(s))
+🚀 ADVANCED (36–50)
+31
+# Remove duplicates
+t = (1,2,2,3)
+print(tuple(set(t)))
+32
+# Second largest
+t = (10, 20, 30)
+lst = list(t)
+lst.sort()
+print(lst[-2])
+33
+# Second smallest
+t = (10, 20, 30)
+lst = list(t)
+lst.sort()
+print(lst[1])
+34
+# Sum using loop
+t = (1,2,3)
+s = 0
+for i in t:
+    s += i
+print(s)
+35
+# Pair elements
+t = (1,2,3,4)
+print(list(zip(t, t[1:])))
+36
+# Frequency count
+t = (1,1,2)
+for i in t:
+    print(i, t.count(i))
+37
+# Find index manually
+t = (10,20,30)
+for i in range(len(t)):
+    if t[i] == 20:
+        print(i)
+38
+# Rotate left
+t = (1,2,3)
+print(t[1:] + t[:1])
+39
+# Rotate right
+t = (1,2,3)
+print(t[-1:] + t[:-1])
+40
+# Check all elements positive
+t = (1,2,3)
+print(all(x > 0 for x in t))
+41
+# Check any element negative
+t = (1,-2,3)
+print(any(x < 0 for x in t))
+42
+# Flatten nested tuple
+t = ((1,2),(3,4))
+flat = []
+for i in t:
+    for j in i:
+        flat.append(j)
+print(tuple(flat))
+43
+# Convert tuple to string
+t = ('a','b','c')
+print(''.join(t))
+44
+# Find common elements
+t1 = (1,2,3)
+t2 = (2,3,4)
+print(tuple(set(t1) & set(t2)))
+45
+# Find unique elements
+t = (1,2,2,3)
+print(tuple(set(t)))
+46
+# Sort tuple without sort()
+t = (3,1,2)
+print(tuple(sorted(t)))
+47
+# Max using loop
+t = (1,5,3)
+m = t[0]
+for i in t:
+    if i > m:
+        m = i
+print(m)
+48
+# Min using loop
+t = (1,5,3)
+m = t[0]
+for i in t:
+    if i < m:
+        m = i
+print(m)
+49
+# Check palindrome tuple
+t = (1,2,1)
+print(t == t[::-1])
+50
+# Merge multiple tuples
+t1 = (1,2)
+t2 = (3,4)
+t3 = (5,6)
+print(t1 + t2 + t3)
+
+
+
+
+
+
+
+
+
+
+🐍 SETS IN PYTHON
+📌 What is a Set?
+
+A set is an unordered collection of unique elements.
+
+👉 No duplicates allowed
+👉 Mutable (can add/remove items)
+👉 No indexing
+
+🧾 Syntax:
+my_set = {1, 2, 3, 4}
+🔥 1. FEATURES OF SET
+
+✔ Unordered
+✔ No duplicates
+✔ Mutable
+✔ No indexing
+
+⚡ 2. CREATE SET
+s = {1, 2, 3}
+print(s)
+❗ Empty Set:
+s = set()   # correct
+🔥 3. SET METHODS
+🟢 add()
+s = {1, 2}
+s.add(3)
+print(s)
+🟢 remove()
+s = {1,2}
+s.remove(2)
+print(s)
+
+🟢 discard()
+s.discard(5)   # no error if not present
+🟢 pop()
+s.pop()
+🟢 clear()
+s.clear()
+🔄 4. SET OPERATIONS
+➕ Union
+a = {1,2}
+b = {2,3}
+print(a | b)
+🔁 Intersection
+print(a & b)
+➖ Difference
+print(a - b)
+🔄 Symmetric Difference
+print(a ^ b)
+❗ IMPORTANT INTERVIEW QUESTIONS
+Q1. What is set?
+
+👉 Unordered collection with unique elements.
+
+Q2. Can set have duplicates?
+
+👉 No
+
+Q3. Difference between remove() and discard()?
+
+👉 remove → error if not found
+👉 discard → no error
+
+🎯 QUICK REVISION
+Concept	Meaning
+Set	Unique elements
+add()	Add item
+remove()	Delete item
+union	Combine
+intersection	Common
+🚀 50 SET CODING QUESTIONS (WITH ANSWERS)
+🔰 BASIC (1–15)
+# 1 Create set
+s = {1,2,3}
+print(s)
+# 2 Add element
+s.add(4)
+print(s)
+# 3 Remove element
+s.remove(2)
+print(s)
+# 4 Discard element
+s.discard(5)
+print(s)
+# 5 Pop element
+s.pop()
+print(s)
+# 6 Length
+print(len(s))
+# 7 Check element
+print(3 in s)
+# 8 Copy set
+s2 = s.copy()
+print(s2)
+# 9 Clear set
+s.clear()
+print(s)
+# 10 Convert list to set
+lst = [1,2,2,3]
+print(set(lst))
+# 11 Convert string to set
+print(set("hello"))
+# 12 Max element
+print(max({1,5,3}))
+# 13 Min element
+print(min({1,5,3}))
+# 14 Sum
+print(sum({1,2,3}))
+# 15 Loop set
+for i in {1,2,3}:
+    print(i)
+⚙️ INTERMEDIATE (16–35)
+# 16 Union
+a = {1,2}
+b = {2,3}
+print(a.union(b))
+# 17 Intersection
+print(a.intersection(b))
+# 18 Difference
+print(a.difference(b))
+# 19 Symmetric difference
+print(a.symmetric_difference(b))
+# 20 Update set
+a.update(b)
+print(a)
+# 21 Intersection update
+a = {1,2}
+b = {2,3}
+a.intersection_update(b)
+print(a)
+# 22 Difference update
+a = {1,2}
+b = {2,3}
+a.difference_update(b)
+print(a)
+# 23 Check subset
+print({1,2}.issubset({1,2,3}))
+# 24 Check superset
+print({1,2,3}.issuperset({1,2}))
+# 25 Check disjoint
+print({1,2}.isdisjoint({3,4}))
+# 26 Remove duplicates
+lst = [1,2,2,3]
+print(list(set(lst)))
+# 27 Common elements
+a = {1,2,3}
+b = {2,3,4}
+print(a & b)
+# 28 Unique elements
+print(a ^ b)
+# 29 Even numbers
+print({x for x in range(10) if x%2==0})
+# 30 Odd numbers
+print({x for x in range(10) if x%2!=0})
+🚀 ADVANCED (36–50)
+# 31 Square set
+print({x*x for x in {1,2,3}})
+# 32 Filter values
+s = {1,2,3,4}
+print({x for x in s if x>2})
+# 33 Length manually
+s = {1,2,3}
+count = 0
+for i in s:
+    count += 1
+print(count)
+# 34 Merge sets
+print({1,2} | {3,4})
+# 35 Check empty
+print(len(set()) == 0)
+# 36 Remove all elements
+s = {1,2,3}
+s.clear()
+print(s)
+# 37 Convert tuple to set
+print(set((1,2,2,3)))
+# 38 Find max manually
+s = {1,5,3}
+m = min(s)
+for i in s:
+    if i > m:
+        m = i
+print(m)
+# 39 Find min manually
+s = {1,5,3}
+m = max(s)
+for i in s:
+    if i < m:
+        m = i
+print(m)
+# 40 Check all positive
+print(all(x>0 for x in {1,2,3}))
+# 41 Check any negative
+print(any(x<0 for x in {1,-2,3}))
+# 42 Pair elements
+s = {1,2,3}
+print(list(zip(s, s)))
+# 43 Convert set to string
+s = {'a','b'}
+print(''.join(s))
+# 44 Find common elements
+print({1,2} & {2,3})
+# 45 Remove duplicates from string
+print("".join(set("hello")))
+# 46 Sort set
+print(sorted({3,1,2}))
+# 47 Difference using -
+print({1,2,3} - {2})
+# 48 Symmetric difference using ^
+print({1,2} ^ {2,3})
+# 49 Check element
+print(5 in {1,2,3})
+# 50 Combine multiple sets
+print({1,2} | {3,4} | {5,6})
