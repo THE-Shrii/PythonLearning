@@ -1844,3 +1844,263 @@ print({1,2} ^ {2,3})
 print(5 in {1,2,3})
 # 50 Combine multiple sets
 print({1,2} | {3,4} | {5,6})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🐍 DICTIONARY IN PYTHON
+📌 What is a Dictionary?
+
+A dictionary is a collection of key-value pairs.
+
+👉 Keys → unique
+👉 Values → can be anything
+👉 Mutable (can change)
+
+🧾 Syntax:
+student = {
+    "name": "Shrii",
+    "age": 20,
+    "marks": 90
+}
+🔥 1. FEATURES
+
+✔ Key-value pair
+✔ Mutable
+✔ No duplicate keys
+✔ Unordered (Python 3.7+ keeps insertion order)
+
+📌 2. ACCESS VALUES
+print(student["name"])
+Safe Access:
+print(student.get("age"))
+🔥 3. ADD / UPDATE
+student["city"] = "Raipur"
+student["age"] = 21
+🔥 4. REMOVE ITEMS
+student.pop("age")
+del student["name"]
+student.clear()
+🔥 5. LOOPING
+for key, value in student.items():
+    print(key, value)
+🔥 6. IMPORTANT METHODS
+Method	Use
+keys()	all keys
+values()	all values
+items()	key-value pairs
+get()	safe access
+pop()	remove
+update()	update
+🎯 QUICK REVISION
+Concept	Meaning
+dict	key-value
+key	unique
+value	any data
+mutable	can change
+❗ INTERVIEW QUESTIONS
+Q1. What is dictionary?
+
+👉 Collection of key-value pairs.
+
+Q2. Can keys be duplicate?
+
+👉 No
+
+Q3. Difference between get() and []?
+
+👉 get() → no error, [] → error if key not found
+
+🚀 50 DICTIONARY CODING QUESTIONS
+🔰 BASIC (1–15)
+# 1 Create dict
+d = {"a":1, "b":2}
+print(d)
+# 2 Access value
+print(d["a"])
+# 3 Add key
+d["c"] = 3
+print(d)
+# 4 Update value
+d["a"] = 10
+print(d)
+# 5 Length
+print(len(d))
+# 6 Check key
+print("a" in d)
+# 7 Get value safely
+print(d.get("x"))
+# 8 Remove item
+d.pop("b")
+print(d)
+# 9 Delete item
+del d["a"]
+print(d)
+# 10 Clear dict
+d.clear()
+print(d)
+# 11 Keys
+print(d.keys())
+# 12 Values
+print(d.values())
+# 13 Items
+print(d.items())
+# 14 Copy dict
+d2 = d.copy()
+print(d2)
+# 15 Loop dict
+for k,v in d.items():
+    print(k,v)
+⚙️ INTERMEDIATE (16–35)
+# 16 Merge dict
+d1 = {"a":1}
+d2 = {"b":2}
+d1.update(d2)
+print(d1)
+# 17 Create from keys
+keys = ["a","b"]
+print(dict.fromkeys(keys, 0))
+# 18 Count frequency
+s = "hello"
+freq = {}
+for ch in s:
+    freq[ch] = freq.get(ch,0)+1
+print(freq)
+# 19 Square values
+d = {1:2, 2:3}
+print({k:v*v for k,v in d.items()})
+# 20 Filter dict
+d = {"a":1,"b":3}
+print({k:v for k,v in d.items() if v>1})
+# 21 Max value
+d = {"a":10,"b":5}
+print(max(d.values()))
+# 22 Min value
+print(min(d.values()))
+# 23 Key with max value
+print(max(d, key=d.get))
+# 24 Key with min value
+print(min(d, key=d.get))
+# 25 Sort by keys
+print(dict(sorted(d.items())))
+# 26 Sort by values
+print(dict(sorted(d.items(), key=lambda x:x[1])))
+# 27 Nested dict
+d = {"a":{"x":1}}
+print(d["a"]["x"])
+# 28 Add nested key
+d["a"]["y"] = 2
+print(d)
+# 29 Remove key safely
+d.pop("z", None)
+# 30 Check empty
+print(len(d)==0)
+🚀 ADVANCED (36–50)
+# 31 Reverse dict
+d = {"a":1,"b":2}
+print({v:k for k,v in d.items()})
+# 32 Merge multiple dicts
+print({**{"a":1}, **{"b":2}})
+# 33 Sum values
+d = {"a":1,"b":2}
+print(sum(d.values()))
+# 34 Multiply values
+res = 1
+for v in d.values():
+    res *= v
+print(res)
+# 35 Count elements manually
+c = 0
+for _ in d:
+    c+=1
+print(c)
+# 36 Find duplicates values
+d = {"a":1,"b":1,"c":2}
+seen = set()
+dup = set()
+for v in d.values():
+    if v in seen:
+        dup.add(v)
+    else:
+        seen.add(v)
+print(dup)
+# 37 Remove duplicate values
+print({k:v for k,v in d.items() if list(d.values()).count(v)==1})
+# 38 Flatten nested dict
+d = {"a":{"x":1}}
+flat = {}
+for k,v in d.items():
+    for k2,v2 in v.items():
+        flat[k2]=v2
+print(flat)
+# 39 Convert list to dict
+lst = ["a","b"]
+print(dict.fromkeys(lst,1))
+# 40 Group by value
+d = {"a":1,"b":1,"c":2}
+res={}
+for k,v in d.items():
+    res.setdefault(v,[]).append(k)
+print(res)
+# 41 Check all values >0
+print(all(v>0 for v in d.values()))
+# 42 Any value negative
+print(any(v<0 for v in d.values()))
+# 43 Convert to list
+print(list(d.items()))
+# 44 Clear dict
+d.clear()
+# 45 Copy using dict()
+d2 = dict(d)
+# 46 Find key by value
+val = 2
+for k,v in d.items():
+    if v == val:
+        print(k)
+# 47 Add multiple keys
+d.update({"x":10,"y":20})
+# 48 Default value
+print(d.get("z",0))
+# 49 Nested loop
+for k,v in d.items():
+    print(k,v)
+# 50 Combine keys & values
+keys = ["a","b"]
+vals = [1,2]
+print(dict(zip(keys,vals)))
