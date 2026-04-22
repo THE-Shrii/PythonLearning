@@ -657,3 +657,166 @@ not	Reverses result
 ✔ Answer:
 
 Python evaluates expression and converts it into Boolean (True/False) to decide execution flow.
+
+
+
+
+////OPERATORS
+
+🐍 OPERATORS IN PYTHON
+📌 What are Operators?
+
+Operators are special symbols used to perform operations on variables and values.
+
+Example:
+
+a + b
+
+👉 Here + is an operator.
+
+🔥 TYPES OF OPERATORS IN PYTHON
+1. 🧮 ARITHMETIC OPERATORS
+
+Used for mathematical calculations.
+
+Operator	Meaning	Example
++	Addition	5 + 2 = 7
+-	Subtraction	5 - 2 = 3
+*	Multiplication	5 * 2 = 10
+/	Division	5 / 2 = 2.5
+//	Floor Division	5 // 2 = 2
+%	Modulus	5 % 2 = 1
+**	Power	2 ** 3 = 8
+Example:
+a = 10
+b = 3
+
+print(a + b)
+print(a // b)
+print(a % b)
+2. ⚖️ COMPARISON OPERATORS
+
+Used to compare values (return True/False)
+
+Operator	Meaning
+==	Equal to
+!=	Not equal
+>	Greater than
+<	Less than
+>=	Greater or equal
+<=	Less or equal
+Example:
+a = 10
+b = 5
+
+print(a > b)   # True
+print(a == b)  # False
+3. 🔗 LOGICAL OPERATORS
+
+Used to combine conditions.
+
+Operator	Meaning
+and	Both True
+or	Any one True
+not	Reverse
+Example:
+a = 10
+b = 5
+
+print(a > 5 and b < 10)  # True
+print(a < 5 or b < 10)   # True
+print(not(a > b))        # False
+4. 🧠 ASSIGNMENT OPERATORS
+
+Used to assign values.
+
+Operator	Meaning
+=	Assign
++=	Add and assign
+-=	Subtract and assign
+*=	Multiply and assign
+Example:
+x = 10
+x += 5
+print(x)   # 15
+5. 🎯 BITWISE OPERATORS (ADVANCED)
+
+Works on binary values.
+
+Operator	Meaning
+&	AND
+|	OR
+^	XOR
+~	NOT
+<<	Left shift
+>>	Right shift
+Example:
+a = 5
+b = 3
+
+print(a & b)
+6. 🧾 MEMBERSHIP OPERATORS
+
+Used to check if value exists in a sequence.
+
+Operator	Meaning
+in	Exists
+not in	Does not exist
+Example:
+text = "python"
+
+print("p" in text)     # True
+print("z" not in text) # True
+7. 🧭 IDENTITY OPERATORS
+
+Used to compare memory location.
+
+Operator	Meaning
+is	Same object
+is not	Different object
+Example:
+a = [1, 2, 3]
+b = a
+
+print(a is b)   # True
+🎯 QUICK REVISION TABLE
+Type	Use
+Arithmetic	Math operations
+Comparison	Compare values
+Logical	Combine conditions
+Assignment	Assign values
+Membership	Check presence
+Identity	Memory comparison
+❗ IMPORTANT INTERVIEW QUESTIONS
+Q1. What are operators in Python?
+
+👉 Symbols used to perform operations on variables and values.
+
+Q2. Difference between == and =?
+
+👉 == compares values, = assigns values.
+
+Q3. What is floor division?
+
+👉 Division that removes decimal part (//)
+
+Q4. What is difference between and / or?
+
+👉 and requires both True, or requires one True.
+
+🚀 REAL-WORLD USES
+
+✔ Calculations in apps
+✔ Login validation
+✔ Data filtering
+✔ Decision making in AI
+✔ Database queries
+
+🔥 BONUS INTERVIEW TRICK
+
+👉 If interviewer asks:
+“Which operator is most used in real apps?”
+
+✔ Answer:
+
+Comparison and logical operators because they are used in conditions and decision-making.
