@@ -4976,3 +4976,207 @@ print(re.findall(r"[A-Z]","Hello World"))
 👉 Say this:
 
 JSON is a lightweight data format used for data exchange, while regex is a pattern matching technique used to search, validate, and manipulate strings in Python.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🧠 REGEX IN PYTHON (Regular Expressions)
+📌 What is Regex?
+
+REGEX (Regular Expression) is a pattern-matching technique used to:
+
+Search text 🔍
+Validate input (email, phone) 📱
+Replace strings ✏️
+Extract data 📊
+
+👉 In Python, regex is handled using the Python re module
+
+📦 1. IMPORT REGEX MODULE
+import re
+🔥 2. IMPORTANT FUNCTIONS
+✔ search()
+
+Finds first match anywhere
+
+import re
+
+text = "My number is 9876543210"
+result = re.search(r"\d+", text)
+
+print(result.group())
+✔ findall()
+
+Finds all matches
+
+import re
+
+text = "a1 b2 c3"
+print(re.findall(r"\d", text))
+✔ match()
+
+Checks only at start
+
+import re
+
+text = "Python is fun"
+print(re.match(r"Python", text))
+✔ sub()
+
+Replace text
+
+import re
+
+text = "I like Java"
+print(re.sub("Java", "Python", text))
+✔ split()
+
+Split string
+
+import re
+
+text = "apple,banana,grape"
+print(re.split(",", text))
+⚡ 3. IMPORTANT REGEX PATTERNS
+Pattern	Meaning
+\d	digit (0–9)
+\D	non-digit
+\w	word (a-z, 0-9, _)
+\W	non-word
+\s	space
++	one or more
+*	zero or more
+?	optional
+^	start
+$	end
+🔥 4. EMAIL VALIDATION
+import re
+
+email = "test@gmail.com"
+
+pattern = r"^[\w\.-]+@[\w\.-]+\.\w+$"
+
+if re.match(pattern, email):
+    print("Valid Email")
+else:
+    print("Invalid Email")
+🔥 5. PHONE NUMBER VALIDATION (India)
+import re
+
+phone = "9876543210"
+
+if re.match(r"^[6-9]\d{9}$", phone):
+    print("Valid Phone")
+else:
+    print("Invalid Phone")
+🔥 6. PASSWORD VALIDATION (BASIC)
+import re
+
+password = "Pass@123"
+
+pattern = r"^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+
+if re.match(pattern, password):
+    print("Valid Password")
+🧠 INTERVIEW QUESTIONS
+Q1. What is regex?
+
+👉 Pattern matching system for text processing.
+
+Q2. What is re module?
+
+👉 Python module used for regex operations.
+
+Q3. Difference between search and match?
+
+👉 search → anywhere
+👉 match → only start
+
+Q4. What does \d mean?
+
+👉 Represents digits (0–9)
+
+Q5. Why regex is used?
+
+👉 Validation, search, replace, extraction
+
+🎯 QUICK REVISION
+Function	Meaning
+search	first match
+findall	all matches
+match	start match
+sub	replace
+split	split string
+🚀 30 REGEX PRACTICE QUESTIONS (IDE + ANSWERS)
+🔰 BASIC (1–10)
+import re
+print(re.findall(r"\d","a1b2c3"))
+print(re.search(r"\d+","abc123").group())
+print(re.sub("a","x","apple"))
+print(re.split(",","a,b,c"))
+print(re.match("Py","Python"))
+print(re.findall(r"[a-z]","ABCabc"))
+print(re.findall(r"\d+","12 34"))
+print(re.findall(r"\s","a b"))
+print(re.findall(r"\W","a@b#c"))
+print(re.findall(r"\w","hi_12"))
+⚙️ INTERMEDIATE (11–20)
+print(bool(re.match(r"^a","apple")))
+print(bool(re.match(r"\d{10}","9876543210")))
+print(re.findall(r"a+","aaab"))
+print(re.findall(r"ab*","abbb"))
+print(re.findall(r"^H","Hello"))
+print(re.findall(r"o$","hello"))
+print(re.findall(r"[A-Z]","Hello World"))
+print(re.findall(r"[0-9]","a1b2"))
+print(re.findall(r"[^0-9]","a1b2"))
+print(re.findall(r"\d+","abc123xyz456"))
+🚀 ADVANCED (21–30)
+print(bool(re.match(r"^[6-9]\d{9}$","9876543210")))
+print(re.findall(r"\w+","Hello World 123"))
+print(re.findall(r"\s+","a   b"))
+print(re.sub(r"\d","X","a1b2c3"))
+print(re.split(r"\s","a b c"))
+print(re.findall(r"he.*o","hello heyo he123o"))
+print(re.findall(r"colou?r","color colour"))
+print(re.findall(r"\d{2,4}","12 123 1234"))
+print(re.findall(r"[aeiou]","hello"))
+print(bool(re.match(r"^[a-zA-Z0-9_]+$","user_123")))
+🚀 FINAL INTERVIEW ANSWER 🔥
+
+👉 Say this:
+
+Regex is a pattern-matching technique used in Python for searching, validating, and manipulating strings using the re module.
+
+
+
+
+
+
+
+
+
+
+
+
+
