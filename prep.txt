@@ -4177,3 +4177,208 @@ for _ in lst:
 👉 Say this:
 
 An iterator in Python is an object that implements the iterator protocol using iter() and next(), allowing traversal of elements one at a time efficiently.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🐍 MODULES IN PYTHON
+📌 What is a Module?
+
+A module is a file containing Python code (functions, variables, classes) that can be reused in other programs.
+
+👉 It helps in:
+
+Code reusability
+Better organization
+Clean structure
+🧾 Example:
+
+A file like:
+
+# mymodule.py
+def add(a, b):
+    return a + b
+🔥 1. IMPORTING MODULES
+👉 Method 1:
+import math
+
+print(math.sqrt(16))
+👉 Method 2:
+from math import sqrt
+
+print(sqrt(25))
+👉 Method 3 (alias):
+import math as m
+
+print(m.factorial(5))
+👉 Import all:
+from math import *
+
+print(sqrt(9))
+⚡ 2. BUILT-IN MODULES
+✔ math
+import math
+print(math.ceil(4.3))
+✔ random
+import random
+print(random.randint(1,10))
+✔ datetime
+import datetime
+print(datetime.datetime.now())
+✔ os
+import os
+print(os.getcwd())
+⚡ 3. CREATING YOUR OWN MODULE
+Step 1: Create file myfile.py
+def hello():
+    print("Hello Shrii")
+Step 2: Use it
+import myfile
+
+myfile.hello()
+⚡ 4. IMPORT SEARCH PATH
+
+Python searches modules in:
+
+Current directory
+Installed packages
+System paths
+🧠 IMPORTANT INTERVIEW QUESTIONS
+Q1. What is module?
+
+👉 A file containing reusable Python code.
+
+Q2. Difference between module and package?
+
+👉 module → single file
+👉 package → collection of modules
+
+Q3. Why modules are used?
+
+👉 Code reuse + better structure
+
+Q4. What is import?
+
+👉 Used to include modules in program
+
+🎯 QUICK REVISION
+Concept	Meaning
+module	single file
+import	load module
+built-in	preinstalled
+alias	rename module
+🚀 30 MODULES PRACTICE QUESTIONS (IDE + ANSWERS)
+🔰 BASIC (1–10)
+# 1 Import math
+import math
+print(math.sqrt(16))
+# 2 Import random
+import random
+print(random.randint(1,10))
+# 3 Import datetime
+import datetime
+print(datetime.datetime.now())
+# 4 Import os
+import os
+print(os.getcwd())
+# 5 Alias module
+import math as m
+print(m.factorial(5))
+# 6 Import function only
+from math import sqrt
+print(sqrt(25))
+# 7 Import all
+from math import *
+print(ceil(4.2))
+# 8 Random number
+import random
+print(random.random())
+# 9 Choice function
+import random
+print(random.choice([1,2,3]))
+# 10 Power function
+import math
+print(math.pow(2,3))
+⚙️ INTERMEDIATE (11–20)
+# 11 Floor value
+import math
+print(math.floor(4.9))
+# 12 Ceiling value
+print(math.ceil(4.1))
+# 13 Absolute value
+print(abs(-10))
+# 14 Square root
+import math
+print(math.sqrt(36))
+# 15 Factorial
+import math
+print(math.factorial(5))
+# 16 Random range
+import random
+print(random.randrange(1,10))
+# 17 Shuffle list
+import random
+lst=[1,2,3]
+random.shuffle(lst)
+print(lst)
+# 18 Date time format
+import datetime
+print(datetime.date.today())
+# 19 Time module
+import time
+print(time.time())
+# 20 Sleep function
+import time
+time.sleep(1)
+print("Done")
+🚀 ADVANCED (21–30)
+# 21 Create custom module usage
+import math
+print(math.sin(0))
+# 22 Log function
+import math
+print(math.log(10))
+# 23 Pi value
+import math
+print(math.pi)
+# 24 E constant
+import math
+print(math.e)
+# 25 OS name
+import os
+print(os.name)
+# 26 Environment variables
+import os
+print(os.environ)
+# 27 Path check
+import os
+print(os.path.exists("test.py"))
+# 28 Random float
+import random
+print(random.uniform(1,10))
+# 29 Random sample
+import random
+print(random.sample([1,2,3,4],2))
+# 30 Module list
+import sys
+print(sys.modules.keys())
+🚀 FINAL INTERVIEW ANSWER 🔥
+
+👉 Say this:
+
+A module in Python is a file containing reusable code like functions, variables, and classes. It helps in code organization and reusability using the import statement.
