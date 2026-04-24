@@ -3934,3 +3934,246 @@ for i in range(len(arr)-1):
 👉 Say this:
 
 In Python, arrays are typically implemented using lists, which are dynamic and can store multiple data types, making them more flexible than traditional arrays.
+
+
+
+
+
+
+
+
+
+
+
+
+🐍 ITERATORS IN PYTHON
+📌 What is an Iterator?
+
+An iterator is an object that allows you to traverse (loop through) a collection one element at a time.
+
+👉 It follows the iterator protocol:
+
+__iter__() → returns iterator object
+__next__() → returns next value
+🧾 Example Idea:
+
+Instead of looping whole list at once, iterator gives one value at a time.
+
+🔥 1. ITERABLE vs ITERATOR
+Iterable	Iterator
+Can be looped	Gives values one by one
+list, tuple, string	object created using iter()
+👉 Example:
+lst = [1, 2, 3]
+
+it = iter(lst)   # convert to iterator
+
+print(next(it))
+print(next(it))
+print(next(it))
+⚡ OUTPUT:
+1
+2
+3
+⚡ 2. HOW ITERATOR WORKS
+lst = [10, 20, 30]
+it = iter(lst)
+
+while True:
+    try:
+        print(next(it))
+    except StopIteration:
+        break
+⚡ 3. ITER() FUNCTION
+
+👉 Converts iterable → iterator
+
+s = "hello"
+it = iter(s)
+
+print(next(it))
+print(next(it))
+⚡ 4. STOPITERATION EXCEPTION
+
+👉 Raised when no more items are left
+
+🧠 IMPORTANT INTERVIEW QUESTIONS
+Q1. What is iterator?
+
+👉 Object that returns data one by one using next().
+
+Q2. Difference between iterable and iterator?
+
+👉 Iterable → can loop
+👉 Iterator → gives values one by one
+
+Q3. What is iter()?
+
+👉 Converts iterable into iterator.
+
+Q4. What is StopIteration?
+
+👉 Exception when iteration ends.
+
+🎯 QUICK REVISION
+Concept	Meaning
+iterable	can loop
+iterator	gives next value
+iter()	create iterator
+next()	get next value
+StopIteration	end
+🚀 30 ITERATOR PRACTICE QUESTIONS (IDE + ANSWERS)
+🔰 BASIC (1–10)
+# 1 Create iterator
+lst = [1,2,3]
+it = iter(lst)
+print(next(it))
+# 2 Next values
+print(next(it))
+# 3 String iterator
+s = "abc"
+it = iter(s)
+print(next(it))
+# 4 Loop using iterator
+lst = [1,2,3]
+it = iter(lst)
+for i in lst:
+    print(next(it))
+# 5 StopIteration handle
+it = iter([1,2])
+try:
+    while True:
+        print(next(it))
+except StopIteration:
+    pass
+# 6 Convert list to iterator
+lst = [10,20]
+it = iter(lst)
+print(type(it))
+# 7 First element
+print(next(iter([5,6,7])))
+# 8 Tuple iterator
+t = (1,2,3)
+it = iter(t)
+print(next(it))
+# 9 String loop
+for ch in iter("hi"):
+    print(ch)
+# 10 Manual iteration
+lst = [1,2]
+it = iter(lst)
+print(next(it))
+print(next(it))
+⚙️ INTERMEDIATE (11–20)
+# 11 Sum using iterator
+lst = [1,2,3]
+it = iter(lst)
+s = 0
+for _ in lst:
+    s += next(it)
+print(s)
+# 12 Count elements
+lst = [1,2,3]
+it = iter(lst)
+c = 0
+for _ in lst:
+    next(it)
+    c += 1
+print(c)
+# 13 Find max
+lst = [1,5,3]
+it = iter(lst)
+m = next(it)
+for _ in lst[1:]:
+    val = next(it)
+    if val > m:
+        m = val
+print(m)
+# 14 Reverse using iterator
+lst = [1,2,3]
+it = iter(lst[::-1])
+print(list(it))
+# 15 Check iteration
+lst = [1,2]
+it = iter(lst)
+print(hasattr(it,'__next__'))
+# 16 Multiple iterators
+lst = [1,2,3]
+it1 = iter(lst)
+it2 = iter(lst)
+print(next(it1), next(it2))
+# 17 Nested iterator
+lst = [[1,2],[3,4]]
+for sub in lst:
+    it = iter(sub)
+    print(list(it))
+# 18 Convert back list
+lst = [1,2,3]
+it = iter(lst)
+print(list(it))
+# 19 Skip values
+lst = [1,2,3,4]
+it = iter(lst)
+next(it)
+next(it)
+print(next(it))
+# 20 Iterator type
+lst = [1,2,3]
+print(type(iter(lst)))
+🚀 ADVANCED (21–30)
+# 21 Manual stop
+lst = [1,2]
+it = iter(lst)
+while True:
+    try:
+        print(next(it))
+    except StopIteration:
+        break
+# 22 String reverse iterator
+s = "abc"
+it = iter(reversed(s))
+print(list(it))
+# 23 Filter with iterator
+lst = [1,2,3,4]
+it = iter(lst)
+print([x for x in lst if x%2==0])
+# 24 Custom iteration sum
+lst = [1,2,3]
+it = iter(lst)
+s = sum(lst)
+print(s)
+# 25 First and last
+lst = [1,2,3]
+it = iter(lst)
+print(next(it), lst[-1])
+# 26 Iterate twice
+lst = [1,2,3]
+it1 = iter(lst)
+it2 = iter(lst)
+print(list(it1), list(it2))
+# 27 Check empty
+lst = []
+it = iter(lst)
+try:
+    print(next(it))
+except StopIteration:
+    print("Empty")
+# 28 Chain iteration
+lst1 = [1,2]
+lst2 = [3,4]
+it = iter(lst1 + lst2)
+print(list(it))
+# 29 Sum using next
+lst = [1,2,3]
+it = iter(lst)
+print(next(it)+next(it)+next(it))
+# 30 Final iterator check
+lst = [1,2,3]
+it = iter(lst)
+for _ in lst:
+    print(next(it))
+🚀 FINAL INTERVIEW LINE 🔥
+
+👉 Say this:
+
+An iterator in Python is an object that implements the iterator protocol using iter() and next(), allowing traversal of elements one at a time efficiently.
