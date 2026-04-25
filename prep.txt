@@ -5574,4 +5574,127 @@ finally:
 Try-except in Python is used for exception handling. It allows us to handle runtime errors gracefully using try, except, else, and finally blocks so that the program does not crash.
 
 
+🧵 STRING FORMATTING IN PYTHON
+📌 What is String Formatting?
 
+String formatting means inserting variables inside strings in a clean and readable way.
+
+In Python, we have 3 main ways:
+
+⚡ 1. f-STRINGS (BEST & MODERN 🔥)
+
+👉 Most used in interviews + real projects
+
+name = "Shrii"
+age = 20
+
+print(f"My name is {name} and age is {age}")
+🔥 Expression inside f-string
+a = 10
+b = 20
+
+print(f"Sum = {a + b}")
+🔥 Formatting numbers
+pi = 3.14159
+
+print(f"Pi value = {pi:.2f}")
+⚡ 2. format() METHOD
+name = "Shrii"
+age = 20
+
+print("My name is {} and age is {}".format(name, age))
+🔥 Indexed format
+print("Name: {0}, Age: {1}".format("Shrii", 20))
+🔥 Named format
+print("Name: {n}, Age: {a}".format(n="Shrii", a=20))
+⚡ 3. OLD % FORMATTING (LESS USED ❌)
+name = "Shrii"
+age = 20
+
+print("My name is %s and age is %d" % (name, age))
+⚡ 4. ALIGNMENT IN STRINGS
+print(f"{'Hello':<10}")  # left align
+print(f"{'Hello':>10}")  # right align
+print(f"{'Hello':^10}")  # center
+⚡ 5. MULTI-LINE FORMATTING
+name = "Shrii"
+age = 20
+
+text = f"""
+Name: {name}
+Age: {age}
+"""
+
+print(text)
+⚡ 6. STRING INTERPOLATION WITH DICTIONARY
+data = {"name": "Shrii", "age": 20}
+
+print(f"Name: {data['name']}, Age: {data['age']}")
+🧠 INTERVIEW QUESTIONS
+Q1. What is string formatting?
+
+👉 Inserting variables inside strings.
+
+Q2. Which is best method?
+
+👉 f-strings (fast + readable)
+
+Q3. Difference between format() and f-string?
+
+👉 f-string → faster, modern
+👉 format() → older method
+
+Q4. What is % formatting?
+
+👉 Old C-style formatting in Python
+
+🎯 QUICK REVISION
+Method	Status
+f-string	BEST 🔥
+format()	OK
+% formatting	OLD ❌
+🚀 30 STRING FORMATTING PRACTICE QUESTIONS
+🔰 BASIC (1–10)
+name = "Shrii"
+print(f"Hello {name}")
+age = 20
+print(f"Age: {age}")
+a, b = 10, 20
+print(f"Sum = {a+b}")
+print("My name is {}" .format("Shrii"))
+print("Value: %d" % 10)
+print(f"{'Hi':<5}")
+print(f"{'Hi':>5}")
+print(f"{'Hi':^5}")
+print(f"{3.14159:.2f}")
+print("Hello {}".format("World"))
+⚙️ INTERMEDIATE (11–20)
+name = "Shrii"
+age = 20
+print(f"{name} is {age} years old")
+print("Sum = {}".format(10+20))
+print(f"{100/3:.2f}")
+print("Name: {0}, Age: {1}".format("A",20))
+print("Name: {n}".format(n="Shrii"))
+print(f"{'Python':<10}")
+print(f"{'Python':>10}")
+print(f"{'Python':^10}")
+print(f"{len('hello')}")
+print(f"{10*5}")
+🚀 ADVANCED (21–30)
+data = {"name":"Shrii"}
+print(f"{data['name']}")
+print(f"{sum([1,2,3])}")
+print(f"{max(1,5,3)}")
+print(f"{min(1,5,3)}")
+print("Hello %s" % "Python")
+print(f"{'AI':*^10}")
+print(f"{12345:,}")
+print(f"{2**3}")
+print(f"{round(3.14159,2)}")
+print(f"Result: {10 if True else 0}")
+🚀 FINAL INTERVIEW ANSWER 🔥
+
+👉 Say this:
+
+String formatting in Python is a way to insert variables inside strings using f-strings, format() method, or % formatting. Among these, f-strings are the most efficient and widely used.
