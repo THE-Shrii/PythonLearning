@@ -5859,3 +5859,161 @@ print(type(x).__name__)
 👉 Say this:
 
 None in Python represents the absence of a value or a null object. It belongs to NoneType and is commonly used when a variable has no value or a function does not return anything.
+
+
+
+
+
+
+
+
+
+⌨️ USER INPUT IN PYTHON
+
+In Python, user input is used to take data from the user while the program is running.
+
+👉 We use the input() function
+
+⚡ 1. BASIC INPUT
+name = input("Enter your name: ")
+print("Hello", name)
+⚡ 2. INPUT IS ALWAYS STRING
+age = input("Enter age: ")
+print(type(age))
+
+✔ Output type → <class 'str'>
+
+⚡ 3. TYPE CASTING INPUT
+✔ Integer input
+age = int(input("Enter age: "))
+print(age + 5)
+✔ Float input
+price = float(input("Enter price: "))
+print(price + 10)
+⚡ 4. MULTIPLE INPUTS
+a, b = input("Enter two numbers: ").split()
+
+print(a)
+print(b)
+✔ Convert to int
+a, b = map(int, input("Enter numbers: ").split())
+
+print(a + b)
+⚡ 5. LIST INPUT
+nums = list(map(int, input("Enter numbers: ").split()))
+
+print(nums)
+⚡ 6. INPUT IN LOOP
+n = int(input("How many numbers? "))
+
+for i in range(n):
+    x = int(input("Enter number: "))
+    print(x)
+⚡ 7. STRING INPUT
+text = input("Enter text: ")
+print(text.upper())
+⚡ 8. SAFE INPUT HANDLING (TRY-EXCEPT)
+try:
+    age = int(input("Enter age: "))
+    print(age)
+except:
+    print("Invalid input")
+🧠 INTERVIEW QUESTIONS
+Q1. What is input()?
+
+👉 Used to take user input.
+
+Q2. What is default input type?
+
+👉 String
+
+Q3. How to take integer input?
+
+👉 int(input())
+
+Q4. How to take multiple inputs?
+
+👉 split() or map()
+
+Q5. Why type casting is needed?
+
+👉 Because input is always string
+
+🎯 QUICK REVISION
+Concept	Meaning
+input()	take user input
+split()	multiple inputs
+int()	convert to integer
+float()	convert to decimal
+🚀 30 USER INPUT PRACTICE QUESTIONS
+🔰 BASIC (1–10)
+name = input("Enter name: ")
+print(name)
+age = input("Enter age: ")
+print(age)
+print(type(input("Enter value: ")))
+x = int(input("Enter number: "))
+print(x)
+x = float(input("Enter float: "))
+print(x)
+a, b = input().split()
+print(a, b)
+a, b = map(int, input().split())
+print(a+b)
+text = input()
+print(text.lower())
+text = input()
+print(text.upper())
+print(input("Enter anything: "))
+⚙️ INTERMEDIATE (11–20)
+nums = list(map(int, input().split()))
+print(sum(nums))
+nums = list(map(int, input().split()))
+print(max(nums))
+nums = list(map(int, input().split()))
+print(min(nums))
+n = int(input())
+print(n*n)
+name = input()
+print(f"Hello {name}")
+a, b = map(int, input().split())
+print(a*b)
+a, b = map(int, input().split())
+print(a/b)
+text = input()
+print(len(text))
+nums = input().split()
+print(len(nums))
+x = input()
+print(x[::-1])
+🚀 ADVANCED (21–30)
+try:
+    n = int(input())
+    print(n)
+except:
+    print("Error")
+nums = list(map(int, input().split()))
+print([x*x for x in nums])
+nums = list(map(int, input().split()))
+print([x for x in nums if x%2==0])
+nums = list(map(int, input().split()))
+print(sum(nums)/len(nums))
+name = input()
+age = int(input())
+print(f"{name} is {age} years old")
+a = int(input())
+b = int(input())
+print(max(a,b))
+text = input()
+print(text.count("a"))
+nums = list(map(int, input().split()))
+print(sorted(nums))
+n = int(input())
+print(list(range(n)))
+text = input()
+print(text.replace("a","x"))
+🚀 FINAL INTERVIEW ANSWER 🔥
+
+👉 Say this:
+
+User input in Python is taken using the input() function, which always returns a string. We use type conversion like int() or float() when numeric input is required.
