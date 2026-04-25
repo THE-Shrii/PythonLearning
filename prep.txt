@@ -5698,3 +5698,164 @@ print(f"Result: {10 if True else 0}")
 👉 Say this:
 
 String formatting in Python is a way to insert variables inside strings using f-strings, format() method, or % formatting. Among these, f-strings are the most efficient and widely used.
+
+
+
+
+
+
+
+
+
+
+
+🧠 WHAT IS None IN PYTHON?
+
+In Python, None is a special keyword that represents:
+
+👉 “Nothing” / “No value” / “Empty state”
+
+It is used when:
+
+A variable has no value
+A function returns nothing
+A placeholder is needed
+⚡ 1. BASIC EXAMPLE
+x = None
+print(x)
+
+✔ Output:
+
+None
+⚡ 2. TYPE OF NONE
+x = None
+print(type(x))
+
+✔ Output:
+
+<class 'NoneType'>
+
+👉 None has its own type: NoneType
+
+⚡ 3. FUNCTION RETURNS NONE (IMPORTANT)
+def greet():
+    print("Hello")
+
+result = greet()
+print(result)
+
+✔ Output:
+
+Hello
+None
+
+👉 Because function has no return → returns None
+
+⚡ 4. CHECK NONE VALUE
+x = None
+
+if x is None:
+    print("Value is None")
+
+👉 Always use is, not ==
+
+⚡ 5. NONE IN CONDITIONS
+x = None
+
+if not x:
+    print("Empty / None value")
+⚡ 6. DIFFERENCE: None vs 0 vs ""
+Value	Meaning
+None	no value
+0	numeric zero
+""	empty string
+⚡ 7. NONE AS DEFAULT PARAMETER
+def show(name=None):
+    if name is None:
+        print("No name provided")
+    else:
+        print(name)
+
+show()
+🧠 INTERVIEW QUESTIONS
+Q1. What is None?
+
+👉 Represents absence of value.
+
+Q2. What is type of None?
+
+👉 NoneType
+
+Q3. Difference between None and 0?
+
+👉 None = no value
+👉 0 = numeric value
+
+Q4. Why use is None?
+
+👉 Because None is a singleton object.
+
+Q5. Can None be compared with ==?
+
+👉 Yes, but best practice is is None
+
+🎯 QUICK REVISION
+Concept	Meaning
+None	no value
+NoneType	its type
+is None	best check
+function return	default None
+🚀 20 NONE PRACTICE QUESTIONS
+🔰 BASIC (1–10)
+x = None
+print(x)
+print(type(None))
+def f():
+    pass
+print(f())
+x = None
+if x is None:
+    print("Yes")
+x = None
+print(x == None)
+x = None
+print(x is None)
+def greet():
+    return None
+print(greet())
+x = None
+if not x:
+    print("Empty")
+print(None == 0)
+print(None == "")
+⚙️ INTERMEDIATE (11–20)
+def test():
+    print("Hi")
+print(test())
+x = None
+y = x
+print(y)
+def func():
+    return
+print(func())
+x = None
+if x:
+    print("Yes")
+else:
+    print("No")
+print(bool(None))
+x = None
+print(x is not None)
+def f(a=None):
+    return a
+print(f())
+print(None == None)
+x = None
+print(id(x))
+x = None
+print(type(x).__name__)
+🚀 FINAL INTERVIEW ANSWER 🔥
+
+👉 Say this:
+
+None in Python represents the absence of a value or a null object. It belongs to NoneType and is commonly used when a variable has no value or a function does not return anything.
