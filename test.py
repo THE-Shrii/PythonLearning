@@ -194,8 +194,8 @@
 # Find the longest word in a sentence.
 
 
-a = "PYTHON IS A LANGUAGE"
-words = a.split()
+# a = "PYTHON IS A LANGUAGE"
+# words = a.split()
 # split() breaks a sentence into separate words using spaces.
 # becomes:
 # ['I', 'love', 'Python', 'programming']
@@ -247,3 +247,74 @@ largest = ""
 # Question
 #
 # Remove duplicate characters from string.
+
+# text = "Programsss"
+# data = ""
+#
+# for char in text:
+#     if char not in text:
+#         data += char
+# print(data)
+
+
+
+
+# Find Duplicate Characters
+# Question
+#
+# Print duplicate characters in string.
+
+# text = "Programmingg"
+# duplicates = []
+#
+# for char in text:
+#     if text.count(char) > 1 and  char not in duplicates:
+#         duplicates.append(char)
+# print(duplicates)
+
+
+
+
+
+
+# Capitalize First Letter of Every Word
+# Question
+#
+# Convert:
+# "i love python"
+
+# text = "i love python"
+# print(text.title())
+
+
+# Find All Substrings
+# Question
+# Print all substrings of a string.
+
+
+# Most Repeated Character
+# Question
+# Find most repeated character.
+
+# a ="POWEREjokhgfdsdfghjjkhgD"
+# max_char  = ""
+# max_count = 0
+# for char in a:
+#     count = a.count(char)
+#
+#     if count > max_count:
+#         max_count = count
+#         max_char = char
+# print(max_char)
+
+
+
+# Check String Contains Only Digits
+# Question
+#
+# Check whether string contains only numbers
+# text = "12345"
+# if text.isdigit():
+#     print("Only Digits")
+# else:
+#     print("Contains Other Characters")
