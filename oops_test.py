@@ -20,6 +20,13 @@
 # ----------------------------------------------------------
 # 3. Constructor with Parameters
 # ----------------------------------------------------------
+# class B:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+# s = B("Shrii",21)
+# print(s.name)
+# print(s.age)
 
 
 
